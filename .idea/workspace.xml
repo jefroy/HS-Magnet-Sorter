@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8da44acb-b3d5-40df-93f6-72f385d42e60" name="Default Changelist" comment="" />
+    <list default="true" id="8da44acb-b3d5-40df-93f6-72f385d42e60" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hs-magnet-sorter/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hs-magnet-sorter/links.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hs-magnet-sorter/src.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hs-magnet-sorter/tests/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hs-magnet-sorter/tests/test_src.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,16 +26,24 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1c7vtH0NmbJdKxLHSBom0cSjc7G" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -36,6 +56,7 @@
       <option name="presentableId" value="Default" />
       <updated>1589892659178</updated>
       <workItem from="1589892661606" duration="569000" />
+      <workItem from="1589894530635" duration="9682000" />
     </task>
     <servers />
   </component>
@@ -43,13 +64,29 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="463" y="165" key="SettingsEditor" timestamp="1589892673484">
+    <state x="710" y="323" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1589903890210">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="463" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589892673484" />
-    <state x="668" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1589892663478">
+    <state x="710" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589903890210" />
+    <state x="742" y="264" key="FileChooserDialogImpl" timestamp="1589896791066">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="668" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589892663478" />
+    <state x="742" y="264" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589896791066" />
+    <state x="463" y="165" key="SettingsEditor" timestamp="1589896802690">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="463" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589896802690" />
+    <state x="668" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1589894535120">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="668" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589894535120" />
+    <state x="656" y="118" width="607" height="804" key="find.popup" timestamp="1589903554843">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="118" width="607" height="804" key="find.popup/0.0.1920.1040/1920.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589903554843" />
+    <state x="650" y="369" width="707" height="307" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1589895785066">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="650" y="369" width="707" height="307" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1920.1040/1920.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589895785066" />
   </component>
 </project>

@@ -1,0 +1,7 @@
+nose
+sphinx
+wheel
+twine
+tox
+cookiecutter
+PyScaffold
