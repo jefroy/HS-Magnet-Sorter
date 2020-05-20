@@ -1,7 +1,1 @@
 numpy
-pyscaffold
-nose
-sphinx
-wheel
-twine
-tox
