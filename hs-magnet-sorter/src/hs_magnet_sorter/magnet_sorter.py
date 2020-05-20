@@ -19,6 +19,8 @@ import argparse
 import sys
 import logging
 
+from .magnet_helper import *
+
 from hs_magnet_sorter import __version__
 
 __author__ = "Ajay"
@@ -28,15 +30,16 @@ __license__ = "mit"
 _logger = logging.getLogger(__name__)
 
 
-def fib(n):
+def fib():
+    """
+    read the datafile and show the entries,
+    ask the user for a range:
+        - consider giving some generic options
+        - primarily a range tho
+        - consider selecting specific links to output
     """
 
-    """
-    assert n > 0
-    a, b = 1, 1
-    for i in range(n-1):
-        a, b = b, a+b
-    return a
+    return
 
 
 def parse_args(args):
@@ -49,16 +52,11 @@ def parse_args(args):
       :obj:`argparse.Namespace`: command line parameters namespace
     """
     parser = argparse.ArgumentParser(
-        description="Just a Fibonacci demonstration")
+        description="generate output file from input file :)")
     parser.add_argument(
         "--version",
         action="version",
         version="hs-magnet-sorter {ver}".format(ver=__version__))
-    parser.add_argument(
-        dest="n",
-        help="n-th Fibonacci number",
-        type=int,
-        metavar="INT")
     parser.add_argument(
         "-v",
         "--verbose",
@@ -88,15 +86,17 @@ def setup_logging(loglevel):
 
 
 def main(args):
-    """Main entry point allowing external calls
-
+    """
+    Main entry point allowing external calls
     Args:
       args ([str]): command line parameter list
     """
     args = parse_args(args)
     setup_logging(args.loglevel)
     _logger.debug("Starting crazy calculations...")
-    print("The {}-th Fibonacci number is {}".format(args.n, fib(args.n)))
+    print("Starting..")
+    magnet_array = read_file()
+    # fib()
     _logger.info("Script ends here")
 
 
