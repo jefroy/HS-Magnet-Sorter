@@ -1,16 +1,15 @@
 import os
-folder_name = 'data/'
 # DATA_DIR = os.path.abspath("")
 
 
-def read_file(fname):
+def read_file(fname, dir_path):
     """
     read the input file
     input file should contain magnet links
     :return: array of magnet links (strings)
     """
-    data_dir = os.path.abspath(folder_name + fname)
-    f = open(data_dir, 'r')
+    data_path = dir_path + '/' + fname
+    f = open(data_path, 'r')
     lines = f.readlines()
     f.close()
     return lines
@@ -25,7 +24,7 @@ def process_array(arr):
     new_arr = []
     size = len(arr) - 1
     count = 0
-    while size != count:
+    while size != 0:
         new_arr[count] = arr[size]
         count += 1
         size -= 1

@@ -9,8 +9,9 @@ __license__ = "mit"
 
 
 def test_read_file():
-    lines1 = read_file('links.txt')
-    lines2 = read_file('empty.txt')
+    data_dir = os.path.abspath("")
+    lines1 = read_file('links.txt', data_dir)
+    lines2 = read_file('empty.txt', data_dir)
     assert lines1, "pass"
     assert len(lines2) == 0, "pass"
 
