@@ -1,5 +1,5 @@
-import os
-# DATA_DIR = os.path.abspath("")
+def test():
+    print('magnet_helper.py says hi :)')
 
 
 def read_file(fname, dir_path):
