@@ -8,14 +8,11 @@ import sys
 
 folderName = 'reqs/'
 
-def is_venv():
-    return (hasattr(sys, 'real_prefix') or
-            (hasattr(sys, 'base_prefix') and sys.base_prefix != sys.prefix))
+print("Installing pre-reqs..")
+system('pip install -r' + folderName + 'pre-reqs.txt')
 
-if is_venv(): # detect venv and install these reqs
-    print('Virtual Environment detected! Installing dev-reqs and reqs..')
-    system('pip install -r' + folderName + 'dev-reqs.txt')
-    system('pip install -r' + folderName + 'reqs.txt')
-else:
-    print("No Virtual Environment detected! Installing pre-reqs..")
-    system('pip install -r' + folderName + 'pre-reqs.txt')
+print('Installing dev-reqs')
+system('pip install -r' + folderName + 'dev-reqs.txt')
+
+print('Installing reqs')
+system('pip install -r' + folderName + 'reqs.txt')
