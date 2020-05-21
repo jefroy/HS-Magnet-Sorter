@@ -23,15 +23,13 @@ class MagnetHelper:
         :return: array of magnet links (strings)
         """
         data_path = self.in_dir + self.fin_name
-        # check for empty file
-        if os.stat(data_path).st_size == 0:
-            print("error: file empty or not found :(")
+        if self.check_file(data_path):
+            f = open(data_path, 'r')
+            self.links = f.readlines()
+            f.close()
+            return True
         else:
-            print("file found and not empty!!")
-
-        f = open(data_path, 'r')
-        self.links = f.readlines()
-        f.close()
+            return False
 
     def reverse_links(self):
         """
@@ -78,12 +76,32 @@ class MagnetHelper:
             print("error: list not filtered!")
             return False
 
-    def write_file(self, arr):
-        f = open(self.out_dir + self.outf_name, 'w')
-        f.writelines(arr)
+    def write_file(self):
+        if len(self.processed_links) <= 0:
+            print("cant write file! array empty!!")
+            return False
+        data_path = self.out_dir + self.outf_name
+        f = open(data_path, 'w')
+        f.writelines(self.processed_links)
         f.close()
+        if self.check_file(data_path):
+            print("output.txt generated!!")
+            return True
+        else:
+            print("error while generating output.txt")
+            return False
 
     # utility
+    @staticmethod
+    def check_file(path):
+        # check for empty file
+        if os.stat(path).st_size == 0:
+            print("error: file empty or not found :(")
+            return False
+        else:
+            print("file found and not empty!!")
+            return True
+
     def print_links(self):
         for link in self.links:
             print('-> ', link)
