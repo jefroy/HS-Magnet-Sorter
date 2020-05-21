@@ -27,7 +27,7 @@ def test_reverse_links(x):
 
 def test_filter_reversed_links(x):
     print("testing filter_reversed_links()...\n")
-    if x.filter_reversed_links(3, 8):
+    if x.filter_reversed_links(64, 88):
         print("passed!")
         return True
     else:
