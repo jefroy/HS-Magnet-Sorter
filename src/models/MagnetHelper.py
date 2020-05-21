@@ -24,21 +24,26 @@ class MagnetHelper:
         f = open(data_path, 'r')
         self.links = f.readlines()
         f.close()
+        return self.links
 
-    def process_array(self, arr):
+    def process_array(self):
         """
         add \n at the end of each entry,
         populate a new array with the correct ordering
         :return: new array
         """
+        size = len(self.links)
+        if size <= 0:
+            print("array is empty!")
+            return
         new_arr = []
-        size = len(arr) - 1
+        size -= 1
         count = 0
-        while size != 0:
-            new_arr[count] = arr[size]
+        while size > 0 and count > 0:
+            new_arr[count] = self.links[size]
             count += 1
             size -= 1
-        return new_arr
+        self.processed_links = new_arr
 
     def filter_processed_array(self, arr, num1, num2):
         """
